@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0724363629668F270003EFCF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724363529668F270003EFCF /* FeedCell.swift */; };
+		0724363A296691AA0003EFCF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07243639296691AA0003EFCF /* Extension.swift */; };
 		07A2BCCD2965ACFB00C3332F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2BCCC2965ACFB00C3332F /* AppDelegate.swift */; };
 		07A2BCCF2965ACFB00C3332F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2BCCE2965ACFB00C3332F /* SceneDelegate.swift */; };
 		07A2BCD12965ACFB00C3332F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2BCD02965ACFB00C3332F /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0724363529668F270003EFCF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		07243639296691AA0003EFCF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		07A2BCC92965ACFB00C3332F /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A2BCCC2965ACFB00C3332F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A2BCCE2965ACFB00C3332F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		07A2BCE02965AD2600C3332F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				07243639296691AA0003EFCF /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		07A2BCE42965AD3600C3332F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0724363529668F270003EFCF /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,8 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A2BCD12965ACFB00C3332F /* ViewController.swift in Sources */,
+				0724363629668F270003EFCF /* FeedCell.swift in Sources */,
 				07A2BCED2965B1E100C3332F /* ImageSelectorController.swift in Sources */,
 				07A2BCEF2965B1F600C3332F /* NotificationController.swift in Sources */,
+				0724363A296691AA0003EFCF /* Extension.swift in Sources */,
 				07A2BCEB2965B1B500C3332F /* SearchController.swift in Sources */,
 				07A2BCCD2965ACFB00C3332F /* AppDelegate.swift in Sources */,
 				07A2BCF12965B21300C3332F /* ProfileController.swift in Sources */,

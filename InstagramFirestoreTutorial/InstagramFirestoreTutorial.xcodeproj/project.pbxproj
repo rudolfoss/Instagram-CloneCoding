@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0724363629668F270003EFCF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724363529668F270003EFCF /* FeedCell.swift */; };
 		0724363A296691AA0003EFCF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07243639296691AA0003EFCF /* Extension.swift */; };
+		076A37342967B1FB00A1507B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A37332967B1FB00A1507B /* LoginController.swift */; };
+		076A37362967B22800A1507B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A37352967B22800A1507B /* RegistrationController.swift */; };
+		076A373A2967B44800A1507B /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 076A37392967B44800A1507B /* JGProgressHUD */; };
 		07A2BCCD2965ACFB00C3332F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2BCCC2965ACFB00C3332F /* AppDelegate.swift */; };
 		07A2BCCF2965ACFB00C3332F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2BCCE2965ACFB00C3332F /* SceneDelegate.swift */; };
 		07A2BCD12965ACFB00C3332F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2BCD02965ACFB00C3332F /* ViewController.swift */; };
@@ -26,6 +29,8 @@
 /* Begin PBXFileReference section */
 		0724363529668F270003EFCF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		07243639296691AA0003EFCF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		076A37332967B1FB00A1507B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		076A37352967B22800A1507B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		07A2BCC92965ACFB00C3332F /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A2BCCC2965ACFB00C3332F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A2BCCE2965ACFB00C3332F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,12 +52,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076A373A2967B44800A1507B /* JGProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076A37322967B1C800A1507B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				076A37332967B1FB00A1507B /* LoginController.swift */,
+				076A37352967B22800A1507B /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		07A2BCC02965ACFB00C3332F = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +122,7 @@
 		07A2BCE22965AD3000C3332F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				076A37322967B1C800A1507B /* Authentication */,
 				07A2BCE62965ADDC00C3332F /* MainTabController.swift */,
 				07A2BCE82965B19D00C3332F /* FeedController.swift */,
 				07A2BCEA2965B1B500C3332F /* SearchController.swift */,
@@ -155,6 +171,9 @@
 			dependencies = (
 			);
 			name = InstagramFirestoreTutorial;
+			packageProductDependencies = (
+				076A37392967B44800A1507B /* JGProgressHUD */,
+			);
 			productName = InstagramFirestoreTutorial;
 			productReference = 07A2BCC92965ACFB00C3332F /* InstagramFirestoreTutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 07A2BCC02965ACFB00C3332F;
+			packageReferences = (
+				076A37382967B44800A1507B /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+			);
 			productRefGroup = 07A2BCCA2965ACFB00C3332F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -211,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A2BCD12965ACFB00C3332F /* ViewController.swift in Sources */,
+				076A37342967B1FB00A1507B /* LoginController.swift in Sources */,
 				0724363629668F270003EFCF /* FeedCell.swift in Sources */,
 				07A2BCED2965B1E100C3332F /* ImageSelectorController.swift in Sources */,
 				07A2BCEF2965B1F600C3332F /* NotificationController.swift in Sources */,
@@ -221,6 +244,7 @@
 				07A2BCE92965B19D00C3332F /* FeedController.swift in Sources */,
 				07A2BCE72965ADDC00C3332F /* MainTabController.swift in Sources */,
 				07A2BCCF2965ACFB00C3332F /* SceneDelegate.swift in Sources */,
+				076A37362967B22800A1507B /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		076A37382967B44800A1507B /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		076A37392967B44800A1507B /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 076A37382967B44800A1507B /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07A2BCC12965ACFB00C3332F /* Project object */;
 }
